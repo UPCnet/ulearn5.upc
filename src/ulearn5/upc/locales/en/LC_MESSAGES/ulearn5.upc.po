@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-02-05 07:10+0000\n"
+"POT-Creation-Date: 2018-02-05 07:52+0000\n"
 "PO-Revision-Date: 2014-04-14 11:35+0100\n"
 "Last-Translator: Roberto Diaz <roberto.diaz@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <>\n"
@@ -14,18 +14,30 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: ulearn5.upc\n"
 
-#: ../configure.zcml:20
+#: ../profiles/default/actions.xml
+msgid "Change password"
+msgstr "Change password"
+
+#: ../profiles/default/actions.xml
+msgid "Go to homepage"
+msgstr "Go to homepage"
+
+#: ../configure.zcml:25
 msgid "Installs the ulearn5.upc add-on."
 msgstr "Installs the ulearn5.upc add-on."
 
-#: ../configure.zcml:29
+#: ../profiles/default/actions.xml
+msgid "None"
+msgstr ""
+
+#: ../configure.zcml:34
 msgid "Uninstalls the ulearn5.upc add-on."
 msgstr "Uninstalls the ulearn5.upc add-on."
 
-#: ../configure.zcml:20
+#: ../configure.zcml:25
 msgid "ulearn5.upc"
 msgstr "ulearn5.upc"
 
-#: ../configure.zcml:29
+#: ../configure.zcml:34
 msgid "ulearn5.upc (uninstall)"
 msgstr "ulearn5.upc (uninstall)"

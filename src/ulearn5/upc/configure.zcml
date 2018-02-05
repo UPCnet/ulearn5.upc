@@ -1,7 +1,12 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="ulearn5.upc">
 
   <i18n:registerTranslations directory="locales" />
@@ -31,5 +36,10 @@
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="ulearn5.upc-hiddenprofiles" />
+
+  <browser:jbot
+      directory="templates"
+      layer=".interfaces.IUlearn5UpcLayer"
+  />
 
 </configure>
