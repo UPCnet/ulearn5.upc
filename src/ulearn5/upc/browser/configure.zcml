@@ -4,18 +4,6 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="ulearn5.upc">
 
-  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
-  <include package="z3c.jbot" file="meta.zcml" />
-  <browser:jbot
-      directory="overrides"
-      layer="ulearn5.upc.interfaces.IUlearn5UpcLayer"
-      />
-
-  <!-- Publish static files -->
-  <plone:static
-      name="ulearn5.upc"
-      type="plone"
-      directory="static"
-      />
+    <include package="z3c.jbot" file="meta.zcml" />
 
 </configure>
