@@ -42,4 +42,12 @@
       layer=".interfaces.IUlearn5UpcLayer"
   />
 
+
+  <genericsetup:importStep
+      name="ulearn5.upc"
+      title="ulearn5.upc setupVarious"
+      description="Setup upc site theme"
+      handler="ulearn5.upc.setuphandlers.setupVarious"
+  />
+
 </configure>

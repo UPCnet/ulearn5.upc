@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
+from plone.registry.interfaces import IRegistry
 from Products.CMFPlone.interfaces import INonInstallable
+from zope.component import queryUtility
 from zope.interface import implementer
+
+from ulearn5.core.controlpanel import IUlearnControlPanelSettings
+
+import transaction
 
 
 @implementer(INonInstallable)
@@ -21,3 +27,30 @@ def post_install(context):
 def uninstall(context):
     """Uninstall script"""
     # Do something at the end of the uninstallation of this package.
+
+
+def setupVarious(context):
+
+    # Ordinarily, GenericSetup handlers check for the existence of XML files.
+    # Here, we are not parsing an XML file, but we use this text file as a
+    # flag to check that we actually meant for this import step to be run.
+    # The file is found in profiles/default.
+
+    if context.readDataFile('ulearn5.upc_various.txt') is None:
+        return
+
+    registry = queryUtility(IRegistry)
+    context.settings = registry.forInterface(IUlearnControlPanelSettings)
+    context.settings.main_color = u'#007AC1'
+    context.settings.secondary_color = u'#007BC0'
+    context.settings.background_property = u'transparent'
+    context.settings.background_color = u'#EAE9E4'
+    context.settings.buttons_color_primary = u'#34495E'
+    context.settings.buttons_color_secondary = u'#34495E'
+    context.settings.maxui_form_bg = u'#34495C'
+    context.settings.alt_gradient_start_color = u'#FA5C2A'
+    context.settings.alt_gradient_end_color = u'#ED4033'
+    context.settings.color_community_closed = u'#007BC0'
+    context.settings.color_community_organizative = u'#B5C035'
+    context.settings.color_community_open = u'#888888'
+    transaction.commit()
