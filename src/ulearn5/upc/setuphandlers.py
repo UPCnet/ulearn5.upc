@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from plone.registry.interfaces import IRegistry
 from Products.CMFPlone.interfaces import INonInstallable
+from Products.CMFPlone.interfaces.controlpanel import ISiteSchema
 from zope.component import queryUtility
 from zope.interface import implementer
 
@@ -40,6 +41,8 @@ def setupVarious(context):
         return
 
     registry = queryUtility(IRegistry)
+
+    # Define colors of site
     context.settings = registry.forInterface(IUlearnControlPanelSettings)
     context.settings.main_color = u'#007AC1'
     context.settings.secondary_color = u'#007BC0'
@@ -53,4 +56,8 @@ def setupVarious(context):
     context.settings.color_community_closed = u'#007BC0'
     context.settings.color_community_organizative = u'#B5C035'
     context.settings.color_community_open = u'#888888'
+
+    # Define logo for the toolbar
+    site_tool = registry.forInterface(ISiteSchema, prefix='plone')
+    site_tool.toolbar_logo = u'/upc-toolbarlogo.png'
     transaction.commit()
