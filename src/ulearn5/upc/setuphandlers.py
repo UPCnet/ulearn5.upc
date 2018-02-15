@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
 from plone.registry.interfaces import IRegistry
 from Products.CMFPlone.interfaces import INonInstallable
+<<<<<<< 24f1a7397eb849d56c919126005d7c3cd2467ede
 from Products.CMFPlone.interfaces.controlpanel import ISiteSchema
+=======
+from Products.CMFCore.utils import getToolByName
+>>>>>>> Login with news and wflow customization
 from zope.component import queryUtility
 from zope.interface import implementer
+from zope.component.hooks import getSite
 
 from ulearn5.core.controlpanel import IUlearnControlPanelSettings
 
@@ -60,4 +65,12 @@ def setupVarious(context):
     # Define logo for the toolbar
     site_tool = registry.forInterface(ISiteSchema, prefix='plone')
     site_tool.toolbar_logo = u'/upc-toolbarlogo.png'
+
+    portal = getSite()
+    wftool = getToolByName(portal['news'], 'portal_workflow')
+    wftool.doActionFor(portal['news'], 'reject')
+    wftool.doActionFor(portal['news']['aggregator'], 'reject')
+    wftool.doActionFor(portal['news'], 'publish')
+    wftool.doActionFor(portal['news']['aggregator'], 'publish')
+
     transaction.commit()
