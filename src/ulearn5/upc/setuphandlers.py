@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 from plone.registry.interfaces import IRegistry
 from Products.CMFPlone.interfaces import INonInstallable
-<<<<<<< 24f1a7397eb849d56c919126005d7c3cd2467ede
 from Products.CMFPlone.interfaces.controlpanel import ISiteSchema
-=======
 from Products.CMFCore.utils import getToolByName
->>>>>>> Login with news and wflow customization
 from zope.component import queryUtility
 from zope.interface import implementer
 from zope.component.hooks import getSite
