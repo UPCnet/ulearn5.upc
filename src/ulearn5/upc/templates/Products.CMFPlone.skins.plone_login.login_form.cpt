@@ -34,9 +34,6 @@
                         use_email_as_login python:context.portal_registry['plone.use_email_as_login'];
                         external_login_url python:context.portal_registry['plone.external_login_url'];
                         external_login_iframe python:context.portal_registry['plone.external_login_iframe'];
-                        mail_password python:test(checkPermission('Mail forgotten password', context), portal_url + '/mail_password_form', '');
-                        mail_password_url request/mail_password_url|nothing;
-                        mail_password_url python:test(mail_password_url and isURLInPortal(mail_password_url), mail_password_url, mail_password);
                         join_actions python:context.portal_actions.listActionInfos('user/join', object=context) or [{}];
                         join python:join_actions[0].get('url');
                         join python:test(join and checkPermission('Add portal member', context), join, '');
@@ -48,6 +45,7 @@
                         target request/target|nothing;
                         target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
                         dades_noticies context/get_news;
+			col_login python:test(dades_noticies, 'col-md-6', 'col-md-12');
                         ztu modules/ZTUtils;">
 
             <div class="portalMessage error pat-cookietrigger" style="display:none">
@@ -65,7 +63,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div tal:attributes="class string:${col_login} noticies-left">
                     <form tal:attributes="action python:context.absolute_url()+'/'+template.id"
                           class="pat-formautofocus"
                           method="post"
@@ -101,8 +99,7 @@
 
                             <input type="hidden"
                                 name="mail_password_url"
-                                value=""
-                            tal:attributes="value request/mail_password_url|nothing" />
+                                value="https://identitatdigital.upc.edu/gcredencials/"/>
 
                             <input type="hidden"
                                 name="join_url"
@@ -229,7 +226,7 @@
 
                     </form>
                     <div id="login-forgotten-password"
-                         tal:condition="python:mail_password_url and use_normal">
+                         tal:condition="python:use_normal">
                         <strong i18n:translate="box_forgot_password_option">
                             Forgot your password?
                         </strong>
@@ -237,8 +234,8 @@
                            i18n:translate="help_password_retrieval">
                             If you have forgotten your password,
                             <span i18n:name="click_here">
-                                <a tal:define="mail_password_url python:mail_password_url+test(mail_password_url.find('?')==-1, '?', '&amp;')+ztu.make_query(userid=login_name)"
-                                    tal:attributes="href mail_password_url; target target;"
+                                <a href="https://identitatdigital.upc.edu/gcredencials/"
+                                    tal:attributes="target target;"
                                    i18n:translate="label_click_here_to_retrieve">we can send you a new one</a></span>.
                         </p>
                     </div>
@@ -261,7 +258,8 @@
 
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 noticies-right" tal:condition="dades_noticies">
+                  <h2>Notícies</h2>
                     <ul class="list-search-portlet">
                         <li class="noticies clearfix" tal:repeat="obj dades_noticies">
                             <div>
@@ -271,18 +269,18 @@
                                 </a>
                                 </div>
                                 <div class="text_noticia">
-                                    <h2>
+                                    <h3>
                                         <a href="" tal:attributes="href obj/url">
                                            <span tal:replace="obj/title">Notícies RSS</span>
-                                        </a>
-                                    </h2>
-                                    <p><time class="smaller" tal:content="obj/date">May 5</time></p>
+                                        </a><time class="smaller" tal:content="obj/date">May 5</time>
+                                    </h3>
+                                    <!-- <p></p> -->
                                     <span tal:condition="obj/text|nothing" tal:replace="structure obj/text">Text Noticia</span>
-                                    <a href="#" class="readmore"
+                                    <!-- <a href="#" class="readmore"
                                        tal:attributes="href obj/url;
                                        title obj/title"><span class="readmore"
                                        i18n:translate="readmore">Leer mas..</span>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                        </li>
@@ -297,7 +295,7 @@
                       id="login_form"
                       name="login_form"
                       class="iframe-wrapper"
-                      tal:define="params python:dict(next=request.URL1+'/logged_in', target='_parent', ajax_load=True, ajax_include_head=True, mail_password_url=mail_password, join_url=join);
+                      tal:define="params python:dict(next=request.URL1+'/logged_in', target='_parent', ajax_load=True, ajax_include_head=True, mail_password_url=https://identitatdigital.upc.edu/gcredencials/, join_url=join);
                                   dummy python:came_from and params.update(dict(came_from=came_from));
                                   src external_login_url"
                       tal:attributes="action src">
