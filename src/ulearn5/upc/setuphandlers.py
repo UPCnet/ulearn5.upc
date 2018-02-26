@@ -6,6 +6,7 @@ from Products.CMFCore.utils import getToolByName
 from zope.component import queryUtility
 from zope.interface import implementer
 from zope.component.hooks import getSite
+from plone import api
 
 from ulearn5.core.controlpanel import IUlearnControlPanelSettings
 
@@ -64,10 +65,16 @@ def setupVarious(context):
     site_tool.toolbar_logo = u'/upc-toolbarlogo.png'
 
     portal = getSite()
-    wftool = getToolByName(portal['news'], 'portal_workflow')
-    wftool.doActionFor(portal['news'], 'reject')
-    wftool.doActionFor(portal['news']['aggregator'], 'reject')
-    wftool.doActionFor(portal['news'], 'publish')
-    wftool.doActionFor(portal['news']['aggregator'], 'publish')
+    state = api.content.get_state(obj=portal['news'])
+    if 'intranet' in state:
+        wftool = getToolByName(portal['news'], 'portal_workflow')
+        wftool.doActionFor(portal['news'], 'reject')
+        wftool.doActionFor(portal['news'], 'publish')
+
+    state = api.content.get_state(obj=portal['news']['aggregator'])
+    if 'intranet' in state:
+        wftool = getToolByName(portal['news']['aggregator'], 'portal_workflow')
+        wftool.doActionFor(portal['news']['aggregator'], 'reject')
+        wftool.doActionFor(portal['news']['aggregator'], 'publish')
 
     transaction.commit()
