@@ -66,13 +66,13 @@ def setupVarious(context):
 
     portal = getSite()
     state = api.content.get_state(obj=portal['news'])
-    if 'intranet' in state:
+    if not'published' in state:
         wftool = getToolByName(portal['news'], 'portal_workflow')
         wftool.doActionFor(portal['news'], 'reject')
         wftool.doActionFor(portal['news'], 'publish')
 
     state = api.content.get_state(obj=portal['news']['aggregator'])
-    if 'intranet' in state:
+    if not'published' in state:
         wftool = getToolByName(portal['news']['aggregator'], 'portal_workflow')
         wftool.doActionFor(portal['news']['aggregator'], 'reject')
         wftool.doActionFor(portal['news']['aggregator'], 'publish')
