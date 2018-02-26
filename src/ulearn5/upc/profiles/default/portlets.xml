@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <portlets xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-          i18n:domain="ulearn">
+          i18n:domain="ulearn5.upc">
 
     <assignment remove="True" name="navigation" category="context" key="/"
                 manager="plone.leftcolumn" type="portlets.Navigation" />

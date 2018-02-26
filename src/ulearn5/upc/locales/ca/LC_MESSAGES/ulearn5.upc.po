@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-02-05 07:52+0000\n"
+"POT-Creation-Date: 2018-02-26 11:36+0000\n"
 "PO-Revision-Date: 2014-04-14 11:20+0100\n"
 "Last-Translator: Corina Riba <corina.riba@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
@@ -22,7 +22,7 @@ msgstr "Canviar contrasenya"
 msgid "Go to homepage"
 msgstr "Inici"
 
-#: ../configure.zcml:25
+#: ../configure.zcml:28
 msgid "Installs the ulearn5.upc add-on."
 msgstr "Instal·la el complement ulearn5.upc"
 
@@ -30,14 +30,19 @@ msgstr "Instal·la el complement ulearn5.upc"
 msgid "None"
 msgstr ""
 
-#: ../configure.zcml:34
+#: ../configure.zcml:37
 msgid "Uninstalls the ulearn5.upc add-on."
 msgstr "Desinstal·la el complement ulearn5.upc"
 
-#: ../configure.zcml:25
+#. Default: "Més notícies"
+#: ../templates/Products.CMFPlone.skins.plone_login.login_form.cpt:289
+msgid "more_news_link"
+msgstr "Més notícies"
+
+#: ../configure.zcml:28
 msgid "ulearn5.upc"
 msgstr "ulearn5.upc"
 
-#: ../configure.zcml:34
+#: ../configure.zcml:37
 msgid "ulearn5.upc (uninstall)"
 msgstr "ulearn5.upc (desinstal·lar)"
