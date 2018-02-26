@@ -20,7 +20,7 @@
 
     <div id="content-core">
         <metal:login use-macro="context/login_form/macros/login" />
-
+        <div class="login-box-error">
         <p i18n:translate="description_not_accept_cookies">
           If your user name and password are correct, the problem may be that
           your browser is not configured to accept cookies.
@@ -46,6 +46,7 @@
           </li>
         </ul>
     </div>
+  </div>
 
   </metal:login_failed>
 
