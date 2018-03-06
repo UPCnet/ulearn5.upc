@@ -16,7 +16,12 @@
 
   <include package=".browser" />
 
-  <cmf:registerDirectory name="upctheme_custom" directory="skins" recursive="True" />
+  <!-- ++theme++ulearn5.upc -->
+  <plone:static
+      directory="theme"
+      type="theme"
+      name="ulearn5.upc"
+      />
 
   <genericsetup:registerProfile
       name="default"

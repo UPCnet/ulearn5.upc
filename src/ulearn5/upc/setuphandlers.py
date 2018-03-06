@@ -62,7 +62,7 @@ def setupVarious(context):
 
     # Define logo for the toolbar
     site_tool = registry.forInterface(ISiteSchema, prefix='plone')
-    site_tool.toolbar_logo = u'/upc-toolbarlogo.png'
+    site_tool.toolbar_logo = u'/++theme++ulearn5.upc/assets/images/upc-toolbarlogo.png'
 
     portal = getSite()
     state = api.content.get_state(obj=portal['news'])
