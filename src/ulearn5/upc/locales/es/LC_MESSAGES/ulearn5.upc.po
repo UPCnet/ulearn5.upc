@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-02-26 11:36+0000\n"
+"POT-Creation-Date: 2018-03-12 16:17+0000\n"
 "PO-Revision-Date: 2014-04-14 11:35+0100\n"
 "Last-Translator: Corina Riba <corina.riba@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
@@ -22,7 +22,7 @@ msgstr "Cambiar contraseña"
 msgid "Go to homepage"
 msgstr "Inicio"
 
-#: ../configure.zcml:28
+#: ../configure.zcml:33
 msgid "Installs the ulearn5.upc add-on."
 msgstr "Instala el complemento ulearn5.upc."
 
@@ -30,19 +30,19 @@ msgstr "Instala el complemento ulearn5.upc."
 msgid "None"
 msgstr ""
 
-#: ../configure.zcml:37
+#: ../configure.zcml:42
 msgid "Uninstalls the ulearn5.upc add-on."
 msgstr "Desinstala el complemento ulearn5.upc."
 
-#. Default: "Més notícies"
-#: ../templates/Products.CMFPlone.skins.plone_login.login_form.cpt:289
-msgid "more_news_link"
-msgstr "Más noticias"
-
-#: ../configure.zcml:28
+#: ../configure.zcml:33
 msgid "ulearn5.upc"
 msgstr "ulearn5.upc"
 
-#: ../configure.zcml:37
+#: ../configure.zcml:42
 msgid "ulearn5.upc (uninstall)"
 msgstr "ulearn5.upc (desinstalar)"
+
+#. Default: "Noticies"
+#: ../browser/viewlets_templates/folderbar.pt:34
+msgid "ulearn_news"
+msgstr "Blog"
