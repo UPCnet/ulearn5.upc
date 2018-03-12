@@ -11,6 +11,7 @@
 
   <i18n:registerTranslations directory="locales" />
 
+  <include package="z3c.jbot" file="meta.zcml" />
   <includeDependencies package="." />
   <grok:grok package="." />
 
