@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ulearn5.upc">
+
+    <browser:page
+        for="ulearn5.core.content.community.communityAdder"
+        class=".overrides.communityAdderUPC"
+        name="addCommunity"
+        permission="zope.Public"
+        layer="ulearn5.upc.interfaces.IUlearn5UpcLayer"
+        />
+
+</configure>

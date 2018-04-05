@@ -15,6 +15,7 @@
   <grok:grok package="." />
 
   <include package=".browser" />
+  <include file="behaviors.zcml" />
 
   <!-- ++theme++ulearn5.upc -->
   <plone:static
