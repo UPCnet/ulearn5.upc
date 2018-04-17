@@ -45,7 +45,7 @@
                         target request/target|nothing;
                         target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
                         dades_noticies context/get_news;
-			col_login python:test(dades_noticies, 'col-md-6', 'col-md-12');
+                        col_login python:test(dades_noticies, 'col-md-6 noticies-left', 'col-md-12');
                         ztu modules/ZTUtils;">
 
             <div class="portalMessage error pat-cookietrigger" style="display:none">
@@ -63,7 +63,7 @@
             </div>
 
             <div class="row">
-                <div tal:attributes="class string:${col_login} noticies-left">
+                <div tal:attributes="class string:${col_login} ">
                     <form tal:attributes="action python:context.absolute_url()+'/'+template.id"
                           class="pat-formautofocus"
                           method="post"
