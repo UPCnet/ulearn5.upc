@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-03-12 16:17+0000\n"
+"POT-Creation-Date: 2018-05-14 06:56+0000\n"
 "PO-Revision-Date: 2014-04-14 11:20+0100\n"
 "Last-Translator: Corina Riba <corina.riba@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
@@ -14,15 +14,23 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: ulearn5.upc\n"
 
+#: ../behaviors.zcml:14
+msgid "Add field terms for community"
+msgstr ""
+
 #: ../profiles/default/actions.xml
 msgid "Change password"
 msgstr "Canviar contrasenya"
+
+#: ../behaviors.zcml:14
+msgid "Community terms"
+msgstr ""
 
 #: ../profiles/default/actions.xml
 msgid "Go to homepage"
 msgstr "Inici"
 
-#: ../configure.zcml:33
+#: ../configure.zcml:34
 msgid "Installs the ulearn5.upc add-on."
 msgstr "Instal·la el complement ulearn5.upc"
 
@@ -30,15 +38,23 @@ msgstr "Instal·la el complement ulearn5.upc"
 msgid "None"
 msgstr ""
 
-#: ../configure.zcml:42
+#: ../configure.zcml:43
 msgid "Uninstalls the ulearn5.upc add-on."
 msgstr "Desinstal·la el complement ulearn5.upc"
 
-#: ../configure.zcml:33
+#: ../behaviors/terms_of_user.py:25
+msgid "description_terms_of_user"
+msgstr "He llegit i accepto els termes i condicions d'ús i privacitat"
+
+#: ../behaviors/terms_of_user.py:24
+msgid "title_terms_of_user"
+msgstr "Condicions d’ús i privacitat"
+
+#: ../configure.zcml:34
 msgid "ulearn5.upc"
 msgstr "ulearn5.upc"
 
-#: ../configure.zcml:42
+#: ../configure.zcml:43
 msgid "ulearn5.upc (uninstall)"
 msgstr "ulearn5.upc (desinstal·lar)"
 
