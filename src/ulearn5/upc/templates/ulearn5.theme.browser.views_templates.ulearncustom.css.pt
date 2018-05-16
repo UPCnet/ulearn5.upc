@@ -15,3 +15,14 @@ a#file_owncloud_edit {
     padding: 10px;
     margin-top: -40px;
 }
+
+.template-login_form,
+.template-logged_out,
+.template-login_failed {
+	background: url(++theme++ulearn5.upc/assets/images/background-login.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
