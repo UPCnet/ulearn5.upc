@@ -41,6 +41,7 @@
  </order>
  <order manager="plone.portalheader" skinname="UPCskin">
   <viewlet name="ulearn.header"/>
+  <viewlet name="upc.header"/>
   <viewlet name="plone.searchbox"/>
   <viewlet name="plone.anontools"/>
  </order>
@@ -50,10 +51,17 @@
   <viewlet name="ulearn.angularrouteview"/>
   <viewlet name="upc.folderbar"/>
  </order>
+ <order manager="plone.abovecontenttitle" skinname="Ulearnskin">
+  <viewlet name="contentleadimage"/>
+  <viewlet name="genweb.important"/>
+  <viewlet name="ulearn.angularrouteview"/>
+  <viewlet name="ulearn.folderbar"/>
+ </order>
  <order manager="plone.belowcontenttitle" skinname="Ulearnskin">
   <viewlet name="contentleadimage"/>
  </order>
  <order manager="plone.portalfooter" skinname="Ulearnskin">
+  <viewlet name="ulearn.footer"/>
   <viewlet name="upc.footer"/>
  </order>
  <order manager="plone.portalheader" skinname="Ulearnskin">
@@ -109,11 +117,39 @@
  <hidden manager="plone.abovecontenttitle" skinname="Ulearn5Theme">
   <viewlet name="contentleadimage"/>
  </hidden>
+ <hidden manager="plone.portalfooter" skinname="Ulearn5Theme">
+  <viewlet name="plone.colophon"/>
+  <viewlet name="plone.site_actions"/>
+  <viewlet name="plone.footer"/>
+  <viewlet name="ulearn.footer"/>
+ </hidden>
+ <hidden manager="plone.portalheader" skinname="Ulearn5Theme">
+  <viewlet name="plone.app.multilingual.languageselector"/>
+  <viewlet name="plone.app.i18n.locales.languageselector"/>
+  <viewlet name="plone.logo"/>
+  <viewlet name="plone.anontools"/>
+  <viewlet name="plone.searchbox"/>
+  <viewlet name="ulearn.header"/>
+ </hidden>
  <hidden manager="plone.abovecontent" skinname="Ulearn5UPC">
   <viewlet name="ulearn.folderbar"/>
  </hidden>
  <hidden manager="plone.abovecontenttitle" skinname="Ulearn5UPC">
   <viewlet name="contentleadimage"/>
+ </hidden>
+ <hidden manager="plone.portalfooter" skinname="Ulearn5UPC">
+  <viewlet name="plone.colophon"/>
+  <viewlet name="plone.site_actions"/>
+  <viewlet name="plone.footer"/>
+  <viewlet name="ulearn.footer"/>
+ </hidden>
+ <hidden manager="plone.portalheader" skinname="Ulearn5UPC">
+  <viewlet name="plone.app.multilingual.languageselector"/>
+  <viewlet name="plone.app.i18n.locales.languageselector"/>
+  <viewlet name="plone.logo"/>
+  <viewlet name="plone.anontools"/>
+  <viewlet name="plone.searchbox"/>
+  <viewlet name="ulearn.header"/>
  </hidden>
  <hidden manager="plone.abovecontenttitle" skinname="Ulearnskin">
   <viewlet name="contentleadimage"/>

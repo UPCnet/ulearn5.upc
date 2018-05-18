@@ -11,3 +11,8 @@ a#file_owncloud_edit {
 .template-login_failed {
 	background: url(++theme++ulearn5.upc/assets/images/background-login.jpg) no-repeat center center fixed;
 }
+
+#image_login {
+  content: url(++theme++ulearn5.upc/assets/images/logomark.png);
+  max-width: 30rem;
+}

@@ -2,12 +2,12 @@
 from five import grok
 from Acquisition import aq_inner, aq_chain
 from zope.interface import Interface
-from plone.app.layout.viewlets.interfaces import IPortalHeader, IAboveContent
+from plone.app.layout.viewlets.interfaces import IPortalHeader, IAboveContent, IPortalFooter
 from ulearn5.upc.interfaces import IUlearn5UpcLayer
 from ulearn5.core.browser.viewlets import viewletBase
 from ulearn5.core.content.community import ICommunity
 from ulearn5.core.interfaces import IDocumentFolder, ILinksFolder, IPhotosFolder, IEventsFolder, INewsItemFolder
-from ulearn5.theme.browser.viewlets import viewletHeaderUlearn
+from ulearn5.theme.browser.viewlets import viewletHeaderUlearn, viewletFooterUlearn
 
 grok.context(Interface)
 
@@ -17,9 +17,16 @@ class viewletBaseUPC(viewletBase):
 
 
 class viewletHeaderUlearnUPC(viewletHeaderUlearn):
-    grok.name('ulearn.header')
+    grok.name('upc.header')
     grok.template('header')
     grok.viewletmanager(IPortalHeader)
+    grok.layer(IUlearn5UpcLayer)
+
+
+class viewletFooterUlearnUPC(viewletFooterUlearn):
+    grok.name('upc.footer')
+    grok.template('footer')
+    grok.viewletmanager(IPortalFooter)
     grok.layer(IUlearn5UpcLayer)
 
 
