@@ -2,11 +2,11 @@ Changelog
 =========
 
 
-0.2 (unreleased)
+0.2 (2018-05-31)
 ----------------
 
-- Nothing changed yet.
-
+* Nuevas imagenes: logo - favicon [iago.lopez]
+* update custom css [alberto.duran]
 
 0.1 (2018-05-22)
 ----------------
