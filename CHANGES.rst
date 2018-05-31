@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-0.3 (unreleased)
+0.3 (2018-05-31)
 ----------------
 
-- Nothing changed yet.
-
+* Update logo [alberto.duran]
 
 0.2 (2018-05-31)
 ----------------
