@@ -13,6 +13,5 @@ a#file_owncloud_edit {
 }
 
 #image_login {
-  content: url(++theme++ulearn5.upc/assets/images/logomark.png);
   max-width: 30rem;
 }
