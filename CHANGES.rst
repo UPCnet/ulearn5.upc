@@ -2,11 +2,12 @@ Changelog
 =========
 
 
-0.4 (unreleased)
+0.4 (2018-06-07)
 ----------------
 
-- Nothing changed yet.
-
+* removed duplciated footer id [Roberto Diaz]
+* Update logo comunitats v2 [alberto.duran]
+* Update template login form for generalize [alberto.duran]
 
 0.3 (2018-05-31)
 ----------------
