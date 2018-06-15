@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-05-14 06:56+0000\n"
+"POT-Creation-Date: 2018-06-15 10:13+0000\n"
 "PO-Revision-Date: 2014-04-14 11:35+0100\n"
 "Last-Translator: Roberto Diaz <roberto.diaz@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <>\n"
@@ -46,6 +46,11 @@ msgstr "Uninstalls the ulearn5.upc add-on."
 msgid "description_terms_of_user"
 msgstr "I agree with terms of user and privacy policy"
 
+#. Default: "Mes noticies"
+#: ../templates/ulearn5.theme.templates.Products.CMFPlone.skins.plone_login.login_form.cpt:248
+msgid "more_news_link"
+msgstr "More news"
+
 #: ../behaviors/terms_of_user.py:24
 msgid "title_terms_of_user"
 msgstr "Terms of use and privacy policy"
@@ -57,6 +62,19 @@ msgstr "ulearn5.upc"
 #: ../configure.zcml:43
 msgid "ulearn5.upc (uninstall)"
 msgstr "ulearn5.upc (uninstall)"
+
+#: ../browser/viewlets_templates/folderbar.pt:11
+msgid "ulearn_activity"
+msgstr "Activity"
+
+#. Default: "Documents"
+#: ../browser/viewlets_templates/folderbar.pt:22
+msgid "ulearn_documents"
+msgstr "Documents"
+
+#: ../browser/viewlets_templates/folderbar.pt:46
+msgid "ulearn_events"
+msgstr "Events"
 
 #. Default: "Noticies"
 #: ../browser/viewlets_templates/folderbar.pt:34
