@@ -44,7 +44,7 @@ msgstr "Uninstalls the ulearn5.upc add-on."
 
 #: ../behaviors/terms_of_user.py:25
 msgid "description_terms_of_user"
-msgstr "I agree with terms of user and privacy policy"
+msgstr "I agree <a href='https://serveistic.upc.edu/ca/comunitats-upc/el-servei/normativa' target='_blank'>with terms of use</a>"
 
 #. Default: "Mes noticies"
 #: ../templates/ulearn5.theme.templates.Products.CMFPlone.skins.plone_login.login_form.cpt:248

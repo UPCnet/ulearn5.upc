@@ -44,7 +44,7 @@ msgstr "Desinstala el complemento ulearn5.upc."
 
 #: ../behaviors/terms_of_user.py:25
 msgid "description_terms_of_user"
-msgstr "He leído y acepto los términos y condiciones de uso y privacidad"
+msgstr "He leído y acepto <a href='https://serveistic.upc.edu/ca/comunitats-upc/el-servei/normativa' target='_blank'>las condiciones de uso</a>"
 
 #. Default: "Mes noticies"
 #: ../templates/ulearn5.theme.templates.Products.CMFPlone.skins.plone_login.login_form.cpt:248
