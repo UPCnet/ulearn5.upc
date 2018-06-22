@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-06-15 10:13+0000\n"
+"POT-Creation-Date: 2018-06-19 13:58+0000\n"
 "PO-Revision-Date: 2014-04-14 11:20+0100\n"
 "Last-Translator: Corina Riba <corina.riba@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
@@ -44,7 +44,7 @@ msgstr "Desinstal·la el complement ulearn5.upc"
 
 #: ../behaviors/terms_of_user.py:25
 msgid "description_terms_of_user"
-msgstr "He llegit i accepto <a href='https://serveistic.upc.edu/ca/comunitats-upc/el-servei/normativa' target='_blank'>les condicions d'ús</a>"
+msgstr "Es necessari acceptar les condicions d'ús i privacitat per crear una comunitat. *"
 
 #. Default: "Mes noticies"
 #: ../templates/ulearn5.theme.templates.Products.CMFPlone.skins.plone_login.login_form.cpt:248
@@ -53,7 +53,7 @@ msgstr "Més notícies"
 
 #: ../behaviors/terms_of_user.py:24
 msgid "title_terms_of_user"
-msgstr "Condicions d’ús i privacitat"
+msgstr "Condicions d’ús"
 
 #: ../configure.zcml:34
 msgid "ulearn5.upc"
