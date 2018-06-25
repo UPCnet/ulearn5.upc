@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-06-25 07:43+0000\n"
+"POT-Creation-Date: 2018-06-25 11:05+0000\n"
 "PO-Revision-Date: 2014-04-14 11:35+0100\n"
 "Last-Translator: Corina Riba <corina.riba@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
@@ -36,24 +36,56 @@ msgstr "Instala el complemento ulearn5.upc."
 
 #: ../profiles/default/actions.xml
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: ../configure.zcml:43
 msgid "Uninstalls the ulearn5.upc add-on."
 msgstr "Desinstala el complemento ulearn5.upc."
 
+#: ../indexers.py:35
+msgid "description"
+msgstr "Biografia"
+
 #: ../behaviors/terms_of_user.py:25
 msgid "description_terms_of_user"
 msgstr "He leído y acepto <a href='https://serveistic.upc.edu/ca/comunitats-upc/el-servei/normativa' target='_blank'>las condiciones de uso</a>"
+
+#: ../indexers.py:35
+msgid "email"
+msgstr "Correo electrónico"
+
+#: ../indexers.py:35
+msgid "fullname"
+msgstr "Nombre completo"
+
+#: ../indexers.py:35
+msgid "home_page"
+msgstr "Pagina de inicio"
+
+#: ../indexers.py:35
+msgid "location"
+msgstr "Localización"
 
 #. Default: "Mes noticies"
 #: ../templates/ulearn5.theme.templates.Products.CMFPlone.skins.plone_login.login_form.cpt:248
 msgid "more_news_link"
 msgstr "Más notícias"
 
+#: ../indexers.py:35
+msgid "telefon"
+msgstr "Teléfono"
+
 #: ../behaviors/terms_of_user.py:24
 msgid "title_terms_of_user"
 msgstr "Condiciones de uso y privacidad"
+
+#: ../indexers.py:35
+msgid "twitter_username"
+msgstr "Twitter"
+
+#: ../indexers.py:35
+msgid "ubicacio"
+msgstr "Ubicación"
 
 #: ../configure.zcml:34
 msgid "ulearn5.upc"
@@ -80,3 +112,7 @@ msgstr "Eventos"
 #: ../browser/viewlets_templates/folderbar.pt:34
 msgid "ulearn_news"
 msgstr "Blog"
+
+#: ../indexers.py:35
+msgid "username"
+msgstr "Usuario"

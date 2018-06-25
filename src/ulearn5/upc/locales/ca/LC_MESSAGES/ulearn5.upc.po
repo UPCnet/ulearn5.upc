@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-06-25 07:43+0000\n"
+"POT-Creation-Date: 2018-06-25 11:05+0000\n"
 "PO-Revision-Date: 2014-04-14 11:20+0100\n"
 "Last-Translator: Corina Riba <corina.riba@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
@@ -36,24 +36,56 @@ msgstr "Instal·la el complement ulearn5.upc"
 
 #: ../profiles/default/actions.xml
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: ../configure.zcml:43
 msgid "Uninstalls the ulearn5.upc add-on."
 msgstr "Desinstal·la el complement ulearn5.upc"
 
+#: ../indexers.py:35
+msgid "description"
+msgstr "Biografia"
+
 #: ../behaviors/terms_of_user.py:25
 msgid "description_terms_of_user"
 msgstr "Es necessari acceptar les condicions d'ús i privacitat per crear una comunitat. *"
+
+#: ../indexers.py:35
+msgid "email"
+msgstr "Correu electrònic"
+
+#: ../indexers.py:35
+msgid "fullname"
+msgstr "Nom complet"
+
+#: ../indexers.py:35
+msgid "home_page"
+msgstr "Pàgina d'inici"
+
+#: ../indexers.py:35
+msgid "location"
+msgstr "Localització"
 
 #. Default: "Mes noticies"
 #: ../templates/ulearn5.theme.templates.Products.CMFPlone.skins.plone_login.login_form.cpt:248
 msgid "more_news_link"
 msgstr "Més notícies"
 
+#: ../indexers.py:35
+msgid "telefon"
+msgstr "Telèfon"
+
 #: ../behaviors/terms_of_user.py:24
 msgid "title_terms_of_user"
 msgstr "Condicions d’ús"
+
+#: ../indexers.py:35
+msgid "twitter_username"
+msgstr "Twitter"
+
+#: ../indexers.py:35
+msgid "ubicacio"
+msgstr "Ubicació"
 
 #: ../configure.zcml:34
 msgid "ulearn5.upc"
@@ -80,3 +112,7 @@ msgstr "Esdeveniments"
 #: ../browser/viewlets_templates/folderbar.pt:34
 msgid "ulearn_news"
 msgstr "Blog"
+
+#: ../indexers.py:35
+msgid "username"
+msgstr "Usuari"
