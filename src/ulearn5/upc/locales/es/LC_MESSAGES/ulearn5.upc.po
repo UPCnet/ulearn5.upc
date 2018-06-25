@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-06-19 13:58+0000\n"
+"POT-Creation-Date: 2018-06-25 07:43+0000\n"
 "PO-Revision-Date: 2014-04-14 11:35+0100\n"
 "Last-Translator: Corina Riba <corina.riba@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: ../behaviors.zcml:14
 msgid "Add field terms for community"
-msgstr ""
+msgstr "Añadir campo de términos para la comunidad"
 
 #: ../profiles/default/actions.xml
 msgid "Change password"
@@ -24,7 +24,7 @@ msgstr "Cambiar contraseña"
 
 #: ../behaviors.zcml:14
 msgid "Community terms"
-msgstr ""
+msgstr "Términos de la comunidad"
 
 #: ../profiles/default/actions.xml
 msgid "Go to homepage"
