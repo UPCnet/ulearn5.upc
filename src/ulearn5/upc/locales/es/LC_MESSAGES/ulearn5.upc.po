@@ -48,7 +48,7 @@ msgstr "Biografia"
 
 #: ../behaviors/terms_of_user.py:25
 msgid "description_terms_of_user"
-msgstr "He leído y acepto <a href='https://serveistic.upc.edu/ca/comunitats-upc/el-servei/normativa' target='_blank'>las condiciones de uso</a>"
+msgstr "Es necessario aceptar las condiciones de uso y privacidad para crear una comunidad. *"
 
 #: ../indexers.py:35
 msgid "email"
