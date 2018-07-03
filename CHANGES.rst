@@ -2,11 +2,15 @@ Changelog
 =========
 
 
-0.5 (unreleased)
+0.5 (2018-07-03)
 ----------------
 
-- Nothing changed yet.
-
+* traduccions [alberto.duran]
+* Traducciones campos perfil [iago.lopez]
+* Traducciones [iago.lopez]
+* traduccions [alberto.duran]
+* Update link for terms of use [alberto.duran]
+* Traduccions [alberto.duran]
 
 0.4 (2018-06-07)
 ----------------
