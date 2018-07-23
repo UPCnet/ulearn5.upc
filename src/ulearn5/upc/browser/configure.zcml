@@ -6,11 +6,4 @@
 
     <include package="z3c.jbot" file="meta.zcml" />
 
-    <browser:page
-        name="get_news"
-        for="*"
-        class=".get_news.getNews"
-        permission="zope.Public"
-        />
-
 </configure>
