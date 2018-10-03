@@ -3,6 +3,22 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="ulearn5.upc">
 
+    <!-- Enhanced user properties adapter -->
+
+    <adapter
+      factory=".userschema.UlearnUserDataPanelExtender"
+      provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
+
+    <adapter
+      provides=".userschema.IUlearnUserSchema"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      factory=".userschema.UlearnUserDataSchemaAdapter"
+      />
+
+    <adapter
+      factory=".userschema.UlearnRegistrationPanelExtender"
+      provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
+
     <browser:page
         for="ulearn5.core.content.community.communityAdder"
         class=".overrides.communityAdderUPC"
