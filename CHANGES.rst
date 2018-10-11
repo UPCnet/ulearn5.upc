@@ -2,11 +2,12 @@ Changelog
 =========
 
 
-0.6 (unreleased)
+0.6 (2018-10-11)
 ----------------
 
-- Nothing changed yet.
-
+* Usershema in UPC [Pilar Marinas]
+* Cambiar color fondo - Setuphandlers [iago.lopez]
+* Noticies a la pagina de login en un paquet de la base no upc [Pilar Marinas]
 
 0.5 (2018-07-03)
 ----------------
