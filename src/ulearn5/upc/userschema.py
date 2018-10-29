@@ -121,18 +121,3 @@ class UlearnRegistrationPanelExtender(extensible.FormExtender):
         fields = field.Fields(IUlearnUserSchema)
 
         self.add(fields)
-
-
-@implementer(ICatalogFactory)
-class UserNewsSearchSoupCatalog(object):
-    def __call__(self, context):
-        catalog = Catalog()
-        idindexer = NodeAttributeIndexer('id')
-        catalog['id'] = CatalogFieldIndex(idindexer)
-        hashindex = NodeAttributeIndexer('searches')
-        catalog['searches'] = CatalogKeywordIndex(hashindex)
-
-        return catalog
-
-
-grok.global_utility(UserNewsSearchSoupCatalog, name='user_news_searches')
