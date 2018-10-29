@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-0.7 (unreleased)
+0.7 (2018-10-29)
 ----------------
 
-- Nothing changed yet.
-
+* Quitar Genweb [Pilar Marinas]
 
 0.6 (2018-10-11)
 ----------------
