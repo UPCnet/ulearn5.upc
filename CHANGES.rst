@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-0.8 (unreleased)
+0.8 (2018-10-30)
 ----------------
 
-- Nothing changed yet.
-
+* Eliminar catalogo user_news_searches [iago.lopez]
 
 0.7 (2018-10-29)
 ----------------
