@@ -2,11 +2,11 @@ Changelog
 =========
 
 
-0.9 (unreleased)
+0.9 (2018-11-12)
 ----------------
 
-- Nothing changed yet.
-
+* ie fixes [root@comunitatsdevel]
+* Denegar acceso a las vistas rebuild_user_catalog, reser_user_catalog y delete_user_catalog [iago.lopez]
 
 0.8 (2018-10-30)
 ----------------
