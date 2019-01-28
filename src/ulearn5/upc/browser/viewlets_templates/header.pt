@@ -11,10 +11,10 @@
 
 
     <div class="button-menu-mobile hidden-md hidden-lg">
-      <a href="#" role="button">Menu<span role="presentation" class="icona-upc">menu</span></a>
+      <a href="#" role="button"><span i18n:translate="">Menu</span><span role="presentation" class="icona-upc">menu</span></a>
     </div>
     <div class="button-menu-mobile--close hidden-md hidden-lg">
-      <a href="#" role="button">Menu<span role="presentation" class="icona-upc">close</span></a>
+      <a href="#" role="button"><span i18n:translate="">Menu</span><span role="presentation" class="icona-upc">close</span></a>
     </div>
     <nav role="navigation" class="global-navigation">
       <h2 class="sr-only" i18n:translate="Eines">Eines</h2>
