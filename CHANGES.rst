@@ -2,11 +2,11 @@ Changelog
 =========
 
 
-0.10 (unreleased)
+0.10 (2019-03-06)
 -----------------
 
-- Nothing changed yet.
-
+* Fix header [Iago López Fernández]
+* Rendimiento: Cabecera [Iago López Fernández]
 
 0.9 (2018-11-12)
 ----------------
