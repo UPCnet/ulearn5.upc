@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Ulearn5UPC\n"
-"POT-Creation-Date: 2018-06-25 11:05+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: 2014-04-14 11:35+0100\n"
 "Last-Translator: Roberto Diaz <roberto.diaz@upcnet.es>\n"
 "Language-Team: Plone Team@UPCnet <>\n"
@@ -58,9 +58,39 @@ msgstr "Email"
 msgid "fullname"
 msgstr "Fullname"
 
-#: ../indexers.py:35
+#. Default: "Contacte telefònic"
+#: ../userschema.py:68
+msgid "help_telefon"
+msgstr "Telephone contact"
+
+#. Default: "Fill in your Twitter username."
+#: ../userschema.py:42
+msgid "help_twitter"
+msgstr "Fill in your Twitter username."
+
+#. Default: "Equip, Àrea / Companyia / Departament"
+#: ../userschema.py:55
+msgid "help_ubicacio"
+msgstr "Computer area / Company / Department"
+
+#: ../indexers.py:36
 msgid "home_page"
 msgstr "Home page"
+
+#. Default: "Telèfon"
+#: ../userschema.py:67
+msgid "label_telefon"
+msgstr "Phone"
+
+#. Default: "Twitter username"
+#: ../userschema.py:41
+msgid "label_twitter"
+msgstr "Twitter username"
+
+#. Default: "Ubicació"
+#: ../userschema.py:54
+msgid "label_ubicacio"
+msgstr "Ubication"
 
 #: ../indexers.py:35
 msgid "location"
@@ -71,19 +101,28 @@ msgstr "Location"
 msgid "more_news_link"
 msgstr "More news"
 
-#: ../indexers.py:35
+#: ../indexers.py:37
+#: ../userschema.py:81
+msgid "private_policy"
+msgstr "Private policy"
+
+#: ../indexers.py:36
 msgid "telefon"
 msgstr "Telefon"
+
+#: ../indexers.py:37
+msgid "time_accepted_private_policy"
+msgstr "Day on which the privacy policy was accepted"
 
 #: ../behaviors/terms_of_user.py:24
 msgid "title_terms_of_user"
 msgstr "Terms of use and privacy policy"
 
-#: ../indexers.py:35
+#: ../indexers.py:36
 msgid "twitter_username"
 msgstr "Twitter"
 
-#: ../indexers.py:35
+#: ../indexers.py:36
 msgid "ubicacio"
 msgstr "Ubication"
 
