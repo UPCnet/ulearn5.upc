@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-0.11 (unreleased)
+0.11 (2019-05-02)
 -----------------
 
-- Nothing changed yet.
-
+* Política de privacidad [Iago López Fernández]
 
 0.10 (2019-03-06)
 -----------------
