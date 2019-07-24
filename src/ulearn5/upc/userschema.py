@@ -1,31 +1,26 @@
 # -*- coding: utf-8 -*-
-from five import grok
 from plone import api
 from plone.app.users.browser.account import AccountPanelSchemaAdapter
 from plone.app.users.browser.register import BaseRegistrationForm
 from plone.app.users.browser.userdatapanel import UserDataPanel
-from plone.directives import form
 from plone.registry.interfaces import IRegistry
 from plone.supermodel import model
 from plone.z3cform.fieldsets import extensible
-from repoze.catalog.catalog import Catalog
-from repoze.catalog.indexes.field import CatalogFieldIndex
-from repoze.catalog.indexes.keyword import CatalogKeywordIndex
-from souper.interfaces import ICatalogFactory
-from souper.soup import NodeAttributeIndexer
 from z3c.form import field
 from zope import schema
 from zope.component import adapts
 from zope.component import queryUtility
 from zope.interface import Interface
-from zope.interface import implementer
 
 from ulearn5.core.controlpanel import IUlearnControlPanelSettings
+from ulearn5.core.utils import isValidTwitterUsername
+from ulearn5.core.utils import stripTwitterUsername
 from ulearn5.core.widgets.max_portrait_widget import MaxPortraitFieldWidget
 from ulearn5.core.widgets.private_policy_widget import PrivatePolicyFieldWidget
 from ulearn5.core.widgets.visibility_widget import VisibilityFieldWidget
 from ulearn5.upc import _
 from ulearn5.upc.interfaces import IUlearn5UpcLayer
+
 
 import datetime
 
@@ -42,6 +37,7 @@ class IUlearnUserSchema(model.Schema):
         description=_(u'help_twitter',
                       default=u'Fill in your Twitter username.'),
         required=False,
+        constraint=isValidTwitterUsername
     )
 
     check_ubicacio = schema.Bool(
@@ -89,6 +85,16 @@ class IUlearnUserSchema(model.Schema):
 
 class UlearnUserDataSchemaAdapter(AccountPanelSchemaAdapter):
     schema = IUlearnUserSchema
+
+    def get_twitter_username(self):
+        return self._getProperty('twitter_username')
+
+    def set_twitter_username(self, value):
+        if value:
+            value = stripTwitterUsername(value)
+        return self._setProperty('twitter_username', value)
+
+    twitter_username = property(get_twitter_username, set_twitter_username)
 
     def get_check_twitter_username(self):
         return self._getProperty('check_twitter_username')
