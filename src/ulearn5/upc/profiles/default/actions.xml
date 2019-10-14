@@ -122,7 +122,7 @@
    <property name="link_target"></property>
    <property name="icon_expr"></property>
    <property
-      name="available_expr">python:here.portal_type in ['privateFolder']</property>
+      name="available_expr">python:True</property>
    <property name="permissions">
     <element value="Sharing page: Delegate roles"/>
    </property>
