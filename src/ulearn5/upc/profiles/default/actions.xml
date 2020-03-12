@@ -194,7 +194,7 @@
    <property name="link_target"></property>
    <property name="icon_expr"></property>
    <property
-      name="available_expr">python:checkPermission("Copy or Move", object) and not globals_view.isPortalOrPortalDefaultPage()</property>
+      name="available_expr">python:checkPermission("Copy or Move", object) and not globals_view.isPortalOrPortalDefaultPage() and here.portal_type not in ['CloudFile']</property>
    <property name="permissions">
     <element value="View"/>
    </property>
