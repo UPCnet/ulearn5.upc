@@ -74,6 +74,12 @@
                 <tal:footer i18n:translate="menu-gestio-estadistiques">Estadistiques</tal:footer>
               </a>
             </li>
+            <li role="menuitem" tal:condition="viewlet/canManageStats">
+              <a href="#" tal:attributes="href string:${portal_url}/users_communities">
+                <i class="fa fa-info-circle"></i>
+                <tal:footer i18n:translate="menu-info-users-communities">Information for users and communities</tal:footer>
+              </a>
+            </li>
           </ul>
         </li>
         <li tal:define="dades viewlet/quickLinks" tal:condition="dades/quickLinksShow" role="presentation" class="dropdown ulearn-eines-ql" >
