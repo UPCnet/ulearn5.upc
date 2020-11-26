@@ -2,7 +2,6 @@
 from plone.registry.interfaces import IRegistry
 from Products.CMFPlone.interfaces import INonInstallable
 from Products.CMFPlone.interfaces.controlpanel import ISiteSchema
-from Products.CMFCore.utils import getToolByName
 from zope.component import queryUtility
 from zope.interface import implementer
 from zope.component.hooks import getSite
@@ -67,13 +66,13 @@ def setupVarious(context):
     portal = getSite()
     state = api.content.get_state(obj=portal['news'])
     if 'intranet' in state:
-        wftool = getToolByName(portal['news'], 'portal_workflow')
+        wftool = api.portal.get_tool(name='portal_workflow')
         wftool.doActionFor(portal['news'], 'reject')
         wftool.doActionFor(portal['news'], 'publish')
 
     state = api.content.get_state(obj=portal['news']['aggregator'])
     if 'intranet' in state:
-        wftool = getToolByName(portal['news']['aggregator'], 'portal_workflow')
+        wftool = api.portal.get_tool(name='portal_workflow')
         wftool.doActionFor(portal['news']['aggregator'], 'reject')
         wftool.doActionFor(portal['news']['aggregator'], 'publish')
 
