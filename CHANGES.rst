@@ -2,11 +2,21 @@ Changelog
 =========
 
 
-0.12 (unreleased)
+0.12 (2021-11-26)
 -----------------
 
-- Nothing changed yet.
-
+* Solucionar error  menu gestion [Pilar Marinas]
+* Menu gestion por macros [ilopezsmx]
+* Reemplazar getToolByName por api.portal.get_tool [Iago López Fernández]
+* Merge remote-tracking branch 'remotes/origin/master' [Iago López Fernández]
+* Añadir enlace menu - Informacion de usuarios y comunidades [Iago López Fernández]
+* Añadir enlace menu - Informacion de usuarios y comunidades [Iago López Fernández]
+* Añadir timezone del usuario [Iago López Fernández]
+* No permitir copiar ficheros CloudFile [Iago López Fernández]
+* Activar sharing en todo los contenidos [Iago López Fernández]
+* isValidTwitterUsername [Iago López Fernández]
+* Merge branch 'master' of https://github.com/UPCnet/ulearn5.upc [Iago López Fernández]
+* Activar historial [Iago López Fernández]
 
 0.11 (2019-05-02)
 -----------------
